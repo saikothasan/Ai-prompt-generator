@@ -4,7 +4,7 @@ import { MessageSquare, Video, Image, Headphones, Code, PenTool, Languages, File
 const aiTools = [
   {
     icon: <MessageSquare className="h-8 w-8" />,
-    name: "ChatGPT",
+    name: "AI Chatbot",
     description: "Engage in human-like conversations and get answers to your questions.",
   },
   {
