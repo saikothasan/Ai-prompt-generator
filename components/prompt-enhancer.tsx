@@ -108,7 +108,7 @@ export default function PromptEnhancer() {
       <div className="container px-4 md:px-6">
         <Card className="w-full max-w-4xl mx-auto">
           <CardHeader>
-            <CardTitle>AI Prompt Enhancer (Powered by Gemini)</CardTitle>
+            <CardTitle>AI Prompt Enhancer (Powered by Google's Gemini)</CardTitle>
             <CardDescription>Improve your prompts for better AI-generated results</CardDescription>
           </CardHeader>
           <CardContent>
