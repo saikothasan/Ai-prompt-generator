@@ -1,5 +1,5 @@
 import { generateText } from "ai"
-import { openai } from "@ai-sdk/openai"
+import { gemini } from "@ai-sdk/gemini"
 import { rateLimiter } from "@/lib/rate-limiter"
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
@@ -29,7 +29,7 @@ export async function POST(req: Request) {
 
   try {
     const { text } = await generateText({
-      model: openai("gpt-4-turbo"),
+      model: gemini("gemini-1.5-flash"),
       prompt: enhancementPrompt,
     })
 
