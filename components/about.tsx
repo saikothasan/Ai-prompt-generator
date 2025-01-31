@@ -9,7 +9,7 @@ export default function About() {
             alt="AI Prompt Enhancement Illustration"
             className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full lg:order-last"
             height="310"
-            src="/placeholder.svg"
+            src="/ff2ae7f4-7ebb-48b1-9e54-fbc7faa7f0b6.webp"
             width="550"
           />
           <div className="flex flex-col justify-center space-y-4">
