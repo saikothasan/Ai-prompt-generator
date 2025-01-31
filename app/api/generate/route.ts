@@ -1,5 +1,5 @@
 import { generateText } from "ai"
-import { gemini } from "@ai-sdk/gemini"
+import { gemini } from "@ai-sdk/google"
 
 export async function POST(req: Request) {
   const { topic, aiTool } = await req.json()
