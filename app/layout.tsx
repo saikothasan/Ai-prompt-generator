@@ -64,7 +64,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <Providers>
           <div className="flex flex-col min-h-screen">
-            <Header session={session} supabase={supabase} />
+            <Header session={session} />
             <main className="flex-grow">{children}</main>
             <Footer />
           </div>
