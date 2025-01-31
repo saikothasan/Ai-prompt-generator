@@ -1,5 +1,5 @@
 import { generateText } from "ai"
-import { gemini } from "@ai-sdk/gemini"
+import { gemini } from "@ai-sdk/google"
 import { rateLimiter } from "@/lib/rate-limiter"
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs"
 import { cookies } from "next/headers"
