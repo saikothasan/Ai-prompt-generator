@@ -1,5 +1,5 @@
 import { generateText } from "ai"
-import { openai } from "@ai-sdk/openai"
+import { gemini } from "@ai-sdk/gemini"
 
 export async function POST(req: Request) {
   const { topic, aiTool } = await req.json()
@@ -14,7 +14,7 @@ export async function POST(req: Request) {
   let promptTemplate = ""
   switch (aiTool) {
     case "chatgpt":
-      promptTemplate = `Generate an engaging conversation starter or question for ChatGPT based on the topic: "${topic}". The prompt should encourage an informative and interactive dialogue.`
+      promptTemplate = `Generate an engaging conversation starter or question for an AI chatbot based on the topic: "${topic}". The prompt should encourage an informative and interactive dialogue.`
       break
     case "ai-video":
       promptTemplate = `Create a detailed video generation prompt for an AI video tool, focusing on the theme: "${topic}". Include specifics about style, mood, scenes, and any particular elements to be featured.`
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
 
   try {
     const { text } = await generateText({
-      model: openai("gpt-4o-mini"),
+      model: gemini("gemini-1.5-flash"),
       prompt: promptTemplate,
     })
 
