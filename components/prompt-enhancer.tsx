@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation"
 
 const aiTools = [
   { value: "general", label: "General AI" },
-  { value: "chatgpt", label: "ChatGPT" },
+  { value: "chatgpt", label: "AI Chatbot" },
   { value: "ai-video", label: "AI Video Generation" },
   { value: "ai-image", label: "AI Image Generation" },
   { value: "ai-audio", label: "AI Audio Generation" },
@@ -108,7 +108,7 @@ export default function PromptEnhancer() {
       <div className="container px-4 md:px-6">
         <Card className="w-full max-w-4xl mx-auto">
           <CardHeader>
-            <CardTitle>AI Prompt Enhancer</CardTitle>
+            <CardTitle>AI Prompt Enhancer (Powered by Gemini)</CardTitle>
             <CardDescription>Improve your prompts for better AI-generated results</CardDescription>
           </CardHeader>
           <CardContent>
