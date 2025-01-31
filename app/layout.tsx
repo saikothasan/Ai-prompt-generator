@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://your-website-url.com",
-    site_name: "AI Prompt Enhancer",
+    siteName: "AI Prompt Enhancer", // Updated line
     images: [
       {
         url: "https://your-website-url.com/og-image.jpg",
