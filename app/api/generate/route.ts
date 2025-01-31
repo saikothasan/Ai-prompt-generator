@@ -1,5 +1,6 @@
-import { generateText } from "ai"
-import { gemini } from "@ai-sdk/google"
+import { GoogleGenerativeAI } from "@google/generative-ai"
+
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY || "")
 
 export async function POST(req: Request) {
   const { topic, aiTool } = await req.json()
@@ -42,10 +43,9 @@ export async function POST(req: Request) {
   }
 
   try {
-    const { text } = await generateText({
-      model: gemini("gemini-1.5-flash"),
-      prompt: promptTemplate,
-    })
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" })
+    const result = await model.generateContent(promptTemplate)
+    const text = result.response.text()
 
     return new Response(JSON.stringify({ prompt: text }), {
       headers: { "Content-Type": "application/json" },
