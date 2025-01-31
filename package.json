@@ -60,7 +60,7 @@
     "@supabase/supabase-js": "latest",
     "express": "latest",
     "ai": "latest",
-    "@ai-sdk/gemini": "latest",
+    "@ai-sdk/google": "latest",
     "@supabase/auth-helpers-nextjs": "latest",
     "express-rate-limit": "latest"
   },
